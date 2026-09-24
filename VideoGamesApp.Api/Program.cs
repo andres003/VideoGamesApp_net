@@ -19,6 +19,9 @@ builder.Services.AddScoped<IVideoGameRepository, VideoGameRepository>();
 builder.Services.AddScoped<ICreateVideoGameUseCase, CreateVideoGameUseCase>();
 builder.Services.AddScoped<IGetAllVideoGamesUseCase, GetAllVideoGamesUseCase>();
 
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<ICreateOrderUseCase, CreateOrderUseCase>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
